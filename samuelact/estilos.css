@@ -80,7 +80,7 @@ main {
 }
 
 .imagen_css {
-    background-image: url('../imag/berserk.jpg');
+    background-image: url('img/berserk.jpg');
     background-size: cover;
     background-position: center;
 }
