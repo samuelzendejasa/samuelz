@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cantante.css">
+</head>
+<body>
+    <main class="maqueta">
+        <header>
+            <h1>CANTANTE</h1>
+        </header>
+        <section class="cuerpo">
+            <aside>
+                <h2>Menú</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">01 - Home</a></li>
+                        <li><a href="disco.html">02 - Disco</a></li>
+                        <li><a href="cantante.html" class="active">03 - Cantante</a></li>
+                        <li><a href="cancion.html">04 - Canción</a></li>
+                        <li><a href="playlist.html">05 - Playlist</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="contenido-principal">
+                <form id="form-cantante">
+                    <fieldset>
+                        <div class="campo">
+                            <span>Nombre</span>
+                            <input type="text" id="cantante-nombre" placeholder="Ej. Freddie Mercury" required>
+                        </div>
+                        <div class="campo">
+                            <span>Edad</span>
+                            <input type="number" id="cantante-edad" required>
+                        </div>
+                        <div class="campo">
+                            <span>Género:</span>
+                            <div class="opciones-inline">
+                                <label><input type="radio" name="genero" value="F"> F</label>
+                                <label><input type="radio" name="genero" value="M"> M</label>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <span>Trayectoria</span>
+                            <div class="opciones-inline">
+                                <label><input type="checkbox" id="cantante-varios"> Varios grupos</label>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <span>Foto</span>
+                            <input type="file" id="cantante-foto">
+                        </div>
+                        <button type="submit" class="btn-registrar">Registrar</button>
+                    </fieldset>
+                </form>
+                <div class="contenedor-imagen-abajo">
+                    <div class="caja-subir-imagen"></div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <span>grupo:401</span>
+            <span>alumno:samuel</span>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

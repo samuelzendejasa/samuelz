@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cancion.css">
+</head>
+<body>
+    <main class="maqueta">
+        <header>
+            <h1>CANCIÓN</h1>
+        </header>
+        <section class="cuerpo">
+            <aside>
+                <h2>Menú</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">01 - Home</a></li>
+                        <li><a href="disco.html">02 - Disco</a></li>
+                        <li><a href="cantante.html">03 - Cantante</a></li>
+                        <li><a href="cancion.html" class="active">04 - Canción</a></li>
+                        <li><a href="playlist.html">05 - Playlist</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="contenido-principal">
+                <form id="form-cancion">
+                    <fieldset>
+                        <div class="campo">
+                            <span>Nombre</span>
+                            <input type="text" id="cancion-nombre" placeholder="Ej. Back in Black" required>
+                        </div>
+                        <div class="campo">
+                            <span>Duración</span>
+                            <input type="text" id="cancion-duracion" placeholder="4:15" required>
+                        </div>
+                        <div class="campo">
+                            <span>Compositor</span>
+                            <input type="text" id="cancion-compositor" placeholder="Angus Young" required>
+                        </div>
+                        <div class="campo">
+                            <span>Cantante</span>
+                            <select id="cancion-cantante">
+                                <option>Brian Johnson</option>
+                                <option>Axl Rose</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-registrar">Registrar</button>
+                    </fieldset>
+                </form>
+                <div class="contenedor-imagen-abajo">
+                    <div class="caja-subir-imagen"></div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <span>grupo:401</span>
+            <span>alumno:samuel</span>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
